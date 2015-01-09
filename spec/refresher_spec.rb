@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 include Tutoring
 
 describe 'Refresher' do
