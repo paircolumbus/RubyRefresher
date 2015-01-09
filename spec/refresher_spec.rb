@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 include Tutoring
 
 describe 'Refresher' do
@@ -49,16 +48,16 @@ describe 'Refresher' do
 
     it "removes an item from the front of an array" do
       expect([1, "banana"].drop(1)).to eq ["banana"]
-			expect([1, "banana"][1..-1]).to eq ["banana"]
+      expect([1, "banana"][1..-1]).to eq ["banana"]
     end
   end
 
   context "the following are Hash methods" do
     it "adds a key and value to a Hash" do
       a_hash = {}
-			a_hash[1] = "first_way"
-			a_hash.store(2, "second_way")
-			expect(a_hash.empty?).to be false 
+      a_hash[1] = "first_way"
+      a_hash.store(2, "second_way")
+      expect(a_hash.empty?).to be false 
     end
 
     it "returns a value from the hash for the given key" do
