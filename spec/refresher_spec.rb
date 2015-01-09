@@ -39,15 +39,15 @@ describe 'Refresher' do
     end
 
     it "removes an item from the end of an array" do
-      expect([1].pop!).to eq 1
+      expect([1].pop).to eq 1
     end
 
     it "adds an item to the front of an array" do
-      expect([1].insert("banana")).to eq ["banana", 1]
+      expect([1].insert(0, "banana")).to eq ["banana", 1]
     end
 
     it "removes an item from the front of an array" do
-      expect([1, "banana"].remove!).to eq ["banana"]
+      expect([1, "banana"].drop(1)).to eq ["banana"]
     end
   end
 
@@ -76,7 +76,7 @@ describe 'Refresher' do
   context "on loops, yeah!!!" do
     it "should loop over the array and return a new array" do
       loopy = [1,2,3]
-      expect(loopy.do { |n| n + 1 }).to eq [2,3,4]
+      expect(loopy.map { |n| n + 1 }).to eq [2,3,4]
     end
   end
 
