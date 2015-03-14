@@ -5,8 +5,8 @@ describe 'Refresher' do
   context "guess the collection" do
 
     it "Yes, it is a Object, but which class" do
-      expect([].is_a? _fill_in_object_).to be true
-      expect(Array.new.instance_of? _FILL_ME_IN_).to be true
+      expect([].is_a? Array).to be true
+      expect(Array.new.instance_of? Array).to be true
     end
 
     it "Yes, it is a Object, but which class" do
