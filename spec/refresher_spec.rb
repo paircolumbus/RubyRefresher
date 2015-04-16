@@ -47,7 +47,7 @@ describe 'Refresher' do
     end
 
     it "removes an item from the front of an array" do
-      expect([1, "banana"]._fill_in_method_here_).to eq ["banana"]
+      expect([1, "banana"]._fill_in_method_here_).to eq 1
     end
   end
 
