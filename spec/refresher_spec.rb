@@ -54,21 +54,21 @@ describe 'Refresher' do
   context "the following are Hash methods" do
     it "adds a key and value to a Hash" do
       a_hash = {}
-      fail h = { "a" => 100}
+      fail h = { "a" => 1, "c" => 2 }
       expect(a_hash.empty?).to be false
     end
 
     it "returns a value from the hash for the given key" do
       a_hash = {magic: :johnson, shirley: :temple, "babe" => "ruth"}
 
-      expect(a_hash.fetch(:magic)).to eq "johnson"
-      expect(a_hash[:shirley]).to eq "temple"
-      expect(a_hash["babe"]).to "ruth"
+      expect(a_hash.fetch(:magic)).to eq "magic johnson"
+      expect(a_hash[:shirley]).to eq "shirley temple"
+      expect(a_hash["babe"]).to "babe ruth"
     end
 
     it "removes a key value pair from a hash" do
       a_hash = { frank: :sinatra }
-      a_hash._fill_in_method_here_(:frank)
+      a_hash.delete(:frank)
       expect(a_hash.empty?).to be true
     end
   end
