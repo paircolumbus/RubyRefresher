@@ -10,8 +10,8 @@ describe 'Refresher' do
     end
 
     it "Yes, it is a Object, but which class" do
-      expect({}.is_a? _fill_in_object_).to be true
-      expect(Hash.new.instance_of? _FILL_ME_IN_).to be true
+      expect({}.is_a? Hash).to be true
+      expect(Hash.new.instance_of? Hash).to be true
     end
   end
 
