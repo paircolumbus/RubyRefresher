@@ -1,7 +1,6 @@
 #Ruby Refresher
 
 __Skill Level:__ Beginner  
-__Time Limit:__ 15 minutes
 
 At this point, it's really important that you work on building your own scripts whether it'd be a game or a tool that you can use. This alone will advance your learning far beyond what any tutorial or reading can do for you.
 
