@@ -80,5 +80,5 @@ describe 'Refresher' do
       expect(loopy.map { |n| n + 1 }).to eq [2,3,4]
     end
   end
-
+#I completed the challenges
 end
