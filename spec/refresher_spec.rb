@@ -21,7 +21,7 @@ describe 'Refresher' do
     end
 
     it "Yes, it is a Object, but which" do
-      expect("module".is_a? Object).to be true
+      expect("module".is_a? String).to be true
     end
 
     it "Yes, it is a Object, but which" do
