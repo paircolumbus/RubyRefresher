@@ -68,7 +68,7 @@ describe 'Refresher' do
 
     it "removes a key value pair from a hash" do
       a_hash = { frank: :sinatra }
-      a_hash._fill_in_method_here_(:frank)
+      a_hash.delete(:frank)
       expect(a_hash.empty?).to be true
     end
   end
@@ -76,7 +76,7 @@ describe 'Refresher' do
   context "on loops, yeah!!!" do
     it "should loop over the array and return a new array" do
       loopy = [1,2,3]
-      expect(loopy._fill_in_method_here_ { |n| n + 1 }).to eq [2,3,4]
+      expect(loopy.collect { |n| n + 1 }).to eq [2,3,4]
     end
   end
 
