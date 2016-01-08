@@ -61,9 +61,9 @@ describe 'Refresher' do
     it "returns a value from the hash for the given key" do
       a_hash = {magic: :johnson, shirley: :temple, "babe" => "ruth"}
 
-      expect(a_hash.fetch(:magic)).to eq a_hash[:magic] 
-      expect(a_hash[:shirley]).to eq a_hash[:shirley]
-      expect(a_hash["babe"]).to eq a_hash["babe"] 
+      expect(a_hash.fetch(:magic)).to eq :johnson
+      expect(a_hash[:shirley]).to eq :temple
+      expect(a_hash["babe"]).to eq "ruth"
     end
 
     it "removes a key value pair from a hash" do
