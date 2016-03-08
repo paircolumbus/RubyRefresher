@@ -43,7 +43,7 @@ describe 'Refresher' do
     end
 
     it "adds an item to the front of an array" do
-      expect([1].insert(0, "banana")).to eq ["banana", 1]
+      expect([1].unshift("banana")).to eq ["banana", 1]
     end
 
     it "removes an item from the front of an array" do
