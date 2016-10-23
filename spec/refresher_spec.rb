@@ -17,7 +17,7 @@ describe 'Refresher' do
 
   context "guess the type" do
     it "Yes, it is a Object, but which" do
-      expect(:class.is_a? Object).to be true
+      expect(:class.is_a? Symbol).to be true
     end
 
     it "Yes, it is a Object, but which" do
