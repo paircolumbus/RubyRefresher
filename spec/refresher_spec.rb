@@ -47,7 +47,7 @@ describe 'Refresher' do
     end
 
     it "removes an item from the front of an array" do
-      expect([1, "banana"].delete_at(0)).to eq 1
+      expect([1, "banana"].shift).to eq 1
     end
   end
 
