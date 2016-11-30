@@ -75,8 +75,8 @@ describe 'Refresher' do
 
   context "on loops, yeah!!!" do
     it "should loop over the array and return a new array" do
-      loopy = [2,3,4]
-      expect(loopy.each { |n| n + 1 }).to eq [2,3,4]
+      loopy = [1,2,3]
+      expect(loopy.map! { |n| n + 1 }).to eq [2,3,4]
     end
   end
 
