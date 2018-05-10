@@ -15,5 +15,6 @@ At this point, it's really important that you work on building your own scripts 
 This challenge is loosely based on Neo's popular RubyKoans if you haven't given those a try, I'd highly recommend them.
 
 ## Resources
+- [Learn Ruby with Codecademy](https://www.codecademy.com/learn/learn-ruby)
 - [Ruby Koans](http://rubykoans.com/)  
 - [Ruby Docs](http://ruby-doc.org/)
