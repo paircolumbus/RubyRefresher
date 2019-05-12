@@ -35,19 +35,19 @@ describe 'Refresher' do
 
   context "the following are Array methods" do
     it "adds a thing to the end of the method" do
-      expect([].Push(1)).to eq [1]
+      expect([].push(1)).to eq [1]
     end
 
     it "removes an item from the end of an array" do
-      expect([1].Pop).to eq 1
+      expect([1].pop).to eq 1
     end
 
     it "adds an item to the front of an array" do
       expect([1].unshift("banana")).to eq ["banana", 1]
-    end
+    end	
 
     it "removes an item from the front of an array" do
-      expect([1, "banana"][1..-1]).to eq 1
+      expect([1, "banana"].shift).to eq 1
     end
   end
 
