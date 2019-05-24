@@ -25,11 +25,11 @@ describe 'Refresher' do
     end
 
     it "Yes, it is a Object, but which" do
-      expect(1.is_a? Numeric).to be true
+      expect(1.is_a? Integer).to be true
     end
 
     it "Yes, it is a Object, but which" do
-      expect(1.5.is_a? Numeric).to be true
+      expect(1.5.is_a? Float).to be true
     end
   end
 
