@@ -5,20 +5,12 @@ describe 'Refresher' do
   context "guess the collection" do
 
     it "Yes, it is a Object, but which class" do
-<<<<<<< HEAD
       expect([].is_a? Array).to be true
-=======
-      expect([].is_a? Object).to be true
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
       expect(Array.new.instance_of? Array).to be true
     end
 
     it "Yes, it is a Object, but which class" do
-<<<<<<< HEAD
       expect({}.is_a? Hash).to be true
-=======
-      expect({}.is_a? Object).to be true
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
       expect(Hash.new.instance_of? Hash).to be true
     end
   end
@@ -43,11 +35,7 @@ describe 'Refresher' do
 
   context "the following are Array methods" do
     it "adds a thing to the end of the method" do
-<<<<<<< HEAD
       expect([].append(1)).to eq [1]
-=======
-      expect([].push(1)).to eq [1]
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
     end
 
     it "removes an item from the end of an array" do
@@ -59,34 +47,21 @@ describe 'Refresher' do
     end
 
     it "removes an item from the front of an array" do
-<<<<<<< HEAD
       expect([1, "banana"].shift).to eq 1
-=======
-      expect([1, "banana"].drop(1)).to eq ["banana"]
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
     end
   end
 
   context "the following are Hash methods" do
     it "adds a key and value to a Hash" do
       a_hash = {}
-<<<<<<< HEAD
       a_hash[:jeff] = "Is cool"
-=======
-      # fail "remove this entire line, implement your solution here" 
-      a_hash[:foo] = "bar"
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
       expect(a_hash.empty?).to be false 
     end
 
     it "returns a value from the hash for the given key" do
       a_hash = {magic: :johnson, shirley: :temple, "babe" => "ruth"}
 
-<<<<<<< HEAD
       expect(a_hash.fetch(:magic)).to eq :johnson
-=======
-      expect(a_hash.fetch(:magic)).to eq :johnson 
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
       expect(a_hash[:shirley]).to eq :temple
       expect(a_hash["babe"]).to eq "ruth"
     end
@@ -101,11 +76,7 @@ describe 'Refresher' do
   context "on loops, yeah!!!" do
     it "should loop over the array and return a new array" do
       loopy = [1,2,3]
-<<<<<<< HEAD
       expect(loopy.each { |n| n + 1 }).to eq [2,3,4]
-=======
-      expect(loopy.map { |n| n + 1 }).to eq [2,3,4]
->>>>>>> 48a49d354e34687f5edcb56fdf618eb97e9842bc
     end
   end
 
