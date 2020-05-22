@@ -18,3 +18,5 @@ This challenge is loosely based on Neo's popular RubyKoans if you haven't given 
 - [Learn Ruby with Codecademy](https://www.codecademy.com/learn/learn-ruby)
 - [Ruby Koans](http://rubykoans.com/)  
 - [Ruby Docs](http://ruby-doc.org/)
+
+add to the readme
