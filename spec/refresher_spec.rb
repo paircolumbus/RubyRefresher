@@ -17,19 +17,19 @@ describe 'Refresher' do
 
   context "guess the type" do
     it "Yes, it is a Object, but which" do
-      expect(:class.is_a? _fill_in_object_).to be true
+      expect(:class.is_a? Symbol).to be true
     end
 
     it "Yes, it is a Object, but which" do
-      expect("module".is_a? _fill_in_object_).to be true
+      expect("module".is_a? String).to be true
     end
 
     it "Yes, it is a Object, but which" do
-      expect(1.is_a? _fill_in_object_).to be true
+      expect(1.is_a? Integer).to be true
     end
 
     it "Yes, it is a Object, but which" do
-      expect(1.5.is_a? _fill_in_object_).to be true
+      expect(1.5.is_a? Float).to be true
     end
   end
 
